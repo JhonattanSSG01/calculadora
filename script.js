@@ -1,7 +1,7 @@
 //Declaramos variables
-let operandoa;
-let operandob;
-let operacion;
+var operandoa;
+var operandob;
+var operacion;
 
 function init() {
   //variables

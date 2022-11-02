@@ -3,46 +3,62 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora con JavaScript</title>
   <link type="text/css" href="style.css" rel="stylesheet">
 </head>
 
 <body onload="init();">
 
-  <table class="calculadora">
-    <tr>
-      <td colspan="4"><span id="resultado"></span></td>
-    </tr>
-    <tr>
-      <td><button id="siete">7</button></td>
-      <td><button id="ocho">8</button></td>
-      <td><button id="nueve">9</button></td>
-      <td><button id="division">/</button></td>
-    </tr>
-    <tr>
-      <td><button id="cuatro">4</button></td>
-      <td><button id="cinco">5</button></td>
-      <td><button id="seis">6</button></td>
-      <td><button id="multiplicacion">*</button></td>
-    </tr>
-    <tr>
-      <td><button id="uno">1</button></td>
-      <td><button id="dos">2</button></td>
-      <td><button id="tres">3</button></td>
-      <td><button id="resta">-</button></td>
-    </tr>
-    <tr>
-      <td><button id="igual">=</button></td>
-      <td><button id="reset">C</button></td>
-      <td><button id="cero">0</button></td>
-      <td><button id="suma">+</button></td>
-    </tr>
-    <tr>
-      <td colspan="4"><span id="creditos">Hecho para DenisseEstrada.com</span></td>
-    </tr>
-  </table>
+  <header>
+    <div class="containerHeader">
+      <h1>Calculadora</h1>
+      <h1>Tema</h1>
+    </div>
+  </header>
 
-  <script src="funcionalidad.js"></script>
+  <main>
+    <table class="calculadora">
+      <tr>
+        <td colspan="4"><span id="resultado"></span></td>
+      </tr>
+      <tr>
+        <td><button id="siete">7</button></td>
+        <td><button id="ocho">8</button></td>
+        <td><button id="nueve">9</button></td>
+        <td><button id="division">/</button></td>
+      </tr>
+      <tr>
+        <td><button id="cuatro">4</button></td>
+        <td><button id="cinco">5</button></td>
+        <td><button id="seis">6</button></td>
+        <td><button id="multiplicacion">*</button></td>
+      </tr>
+      <tr>
+        <td><button id="uno">1</button></td>
+        <td><button id="dos">2</button></td>
+        <td><button id="tres">3</button></td>
+        <td><button id="resta">-</button></td>
+      </tr>
+      <tr>
+        <td><button id="igual">=</button></td>
+        <td><button id="reset">C</button></td>
+        <td><button id="cero">0</button></td>
+        <td><button id="suma">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="4"><span id="creditos">Hecho para DenisseEstrada.com</span></td>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <h3>💚 Diseñado por Jhonattaan Steven Saavedra Gomez</h3>
+    <h3>© 2022 Copyright</h3>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
