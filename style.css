@@ -15,7 +15,8 @@ footer > .contenedorPieDePagina{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #30bea1;
+  background-color: #505050;
+  color: #fff;
 }
 
 .contenedorEncabezado > h1 {
@@ -31,21 +32,38 @@ main {
 }
 
 
-.calculadora{
-  width:300px;
-  height:500px;
-  margin:0 auto;
-  padding:20px;
-  display:block;
-  border-radius: 25px;
-  background-color:#2980b9;
+main > .calculadora{
+  width: 21.5rem;
+  height: 33rem;
+  margin: 0 auto;
+  padding: 1rem;
+  display: block;
+  border-radius: 1rem;
+  background-color: #696969;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .5),
+        0 10px 20px rgba(0, 0, 0, .5);
 }
 
-.calculadora td button{
-  display:block;
-  width:70px;
-  height: 70px;
-  font-size: 25px;
+.calculadora td > button{
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  margin: .8rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: 4px solid rgba(0, 0, 0, .5);
+  background-color: #505050;
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+button > p {
+  margin: 0;
+  transform: rotate(315deg);
+}
+
+#espacio {
+  display: none;
 }
 
 #creditos{
@@ -66,5 +84,5 @@ main {
   line-height: 100px;
   background-color:#fff;
   border-radius: 25px;
-  overflow-y: scroll;
+  overflow: hidden;
 }
