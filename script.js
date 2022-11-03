@@ -1,3 +1,10 @@
+const btnCambio = document.querySelector('#cambio');
+
+btnCambio.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+  btnCambio.classList.toggle('active');
+});
+
 //Declaramos variables
 var operandoa;
 var operandob;
