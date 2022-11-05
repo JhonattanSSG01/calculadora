@@ -1,5 +1,8 @@
+/* Se importa los recursos de las fuentes de Google */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
+/* Se agregan propiedades generales */
+/* Body */
 body {
   margin: 0;
   padding: 0;
@@ -7,38 +10,8 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-body.dark{
-  background-color: #505050;
-}
-
-body.dark
-header > .contenedorEncabezado,
-body.dark
-footer > .contenedorPieDePagina{
-  background-color: #B9B9B9;
-  color: #000;
-}
-
-body.dark
-main > .calculadora {
-  background-color: #D9D9D9;
-  box-shadow: 0 15px 35px rgba(240, 240, 240, 0.5), 0 10px 20px rgba(240, 240, 240, 0.5);
-}
-
-
-body.dark
-.calculadora td > button,
-body.dark
-#result {
-  background-color: rgba(147, 147, 147, .5);
-  color: #000;
-}
-
-body.dark
-.calculadora td > button:hover {
-  background-color: #696969;
-}
-
+/* Tema Oscuro */
+/* Header y Footer */
 header > .contenedorEncabezado,
 footer > .contenedorPieDePagina {
   max-width: 100%;
@@ -51,22 +24,26 @@ footer > .contenedorPieDePagina {
   color: #fff;
 }
 
+/* Titulo principal */
 .contenedorEncabezado > h1 {
   margin: 0;
   font-size: clamp(1rem, 5vw, 3rem);
   font-weight: 700;
 }
 
+/* Icono de cambio de tema */
 .contenedorEncabezado i {
   margin-right: .5rem;
   font-size: clamp(1rem, 5vw, 2.5rem);
   cursor: pointer;
 }
 
+/* Titulo sobre legalidad */
 .contenedorPieDePagina > h3 {
   font-size: clamp(.5rem, 3vw, 1.2rem);
 }
 
+/* Responsive para Mobile */
 @media only screen and (max-width: 480px){
   footer > .contenedorPieDePagina {
     flex-direction: column;
@@ -74,6 +51,7 @@ footer > .contenedorPieDePagina {
   }
 }
 
+/* Main */
 main {
   width: 100vw;
   height: 80vh;
@@ -81,18 +59,20 @@ main {
   place-items: center;
 }
 
+/* Calculadora */
 main > .calculadora {
+  display: block;
   width: 25rem;
   height: 38rem;
   margin: 0 auto;
   padding: 1rem;
-  display: block;
   border-radius: 1rem;
   background-color: rgba(38, 38, 38, .5);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 10px 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
+/* Botones */
 .calculadora td > button {
   display: block;
   width: 4.5rem;
@@ -107,17 +87,20 @@ main > .calculadora {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
+/* Cambio de propiedades cuanndo el mouse pasa por encima del item */
 .calculadora td > button:hover {
   background-color: #7b7b7b;
   transform: scale(0.9) rotate(45deg);
 }
 
+/* Caracteres de los botones */
 button > p {
   margin: 0;
   transform: rotate(315deg);
   font-size: 2rem;
 }
 
+/* Botones igual y limpiar o eliminar */
 #reset,
 #equal {
   position: absolute;
@@ -135,6 +118,7 @@ button > p {
   height: 6rem;
 }
 
+/* Panel o Display */
 #result {
   display: block;
   text-align: right;
@@ -148,4 +132,42 @@ button > p {
   overflow: hidden;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   color: #fff;
+}
+
+
+/* Tema Claro */
+/* Body */
+body.dark{
+  background-color: #505050;
+}
+
+/* Header y Footer */
+body.dark
+header > .contenedorEncabezado,
+body.dark
+footer > .contenedorPieDePagina{
+  background-color: #B9B9B9;
+  color: #000;
+}
+
+/* Calculadora */
+body.dark
+main > .calculadora {
+  background-color: #D9D9D9;
+  box-shadow: 0 15px 35px rgba(240, 240, 240, 0.5), 0 10px 20px rgba(240, 240, 240, 0.5);
+}
+
+/* Panel o display y botones */
+body.dark
+.calculadora td > button,
+body.dark
+#result {
+  background-color: rgba(147, 147, 147, .5);
+  color: #000;
+}
+
+/* Botones cuando pasa el mouse por encia del item */
+body.dark
+.calculadora td > button:hover {
+  background-color: #696969;
 }
