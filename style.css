@@ -1,3 +1,4 @@
+
 /* Se importa los recursos de las fuentes de Google */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
@@ -23,12 +24,6 @@ footer > .contenedorPieDePagina {
   color: #fff;
 }
 
-footer > .contenedorPieDePagina {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 
 /* Titulo principal */
 .contenedorEncabezado > h1 {
@@ -170,10 +165,6 @@ body.dark .calculadora td > button:hover {
   footer > .contenedorPieDePagina {
     height: auto;
     padding: 0.5rem;
-  }
-
-  footer > .contenedorPieDePagina {
-    position: initial;
   }
 
   header > .contenedorEncabezado > h1 > span {
