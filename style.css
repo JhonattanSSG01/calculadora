@@ -1,4 +1,3 @@
-
 /* Se importa los recursos de las fuentes de Google */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
@@ -23,7 +22,6 @@ footer > .contenedorPieDePagina {
   background-color: #515151;
   color: #fff;
 }
-
 
 /* Titulo principal */
 .contenedorEncabezado > h1 {
@@ -81,7 +79,7 @@ main > .calculadora {
 }
 
 /* Cambio de propiedades cuanndo el mouse pasa por encima del item */
-.calculadora td > button:hover {
+.calculadora td > button:active {
   background-color: #7b7b7b;
   transform: scale(0.9) rotate(45deg);
 }
@@ -155,7 +153,7 @@ body.dark #result {
 }
 
 /* Botones cuando pasa el mouse por encia del item */
-body.dark .calculadora td > button:hover {
+body.dark .calculadora td > button:active {
   background-color: #696969;
 }
 
@@ -169,10 +167,6 @@ body.dark .calculadora td > button:hover {
 
   header > .contenedorEncabezado > h1 > span {
     display: none;
-  }
-
-  main {
-    margin: 1rem 0;
   }
 
   main > .calculadora {

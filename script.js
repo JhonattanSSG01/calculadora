@@ -76,7 +76,6 @@ function seleccionarOperacion(op) {
   operacion = op; // Se asigna el símbolo de operación a calcular
   opAnterior = opActual; // Se asigna el número actual
   opActual = ''; // Se asigna el valor inicial
-
 }
 
 /* Esta función se basa en calcular los números y operación que se hayan capturado anteriormente, En ella hay una condicional en donde se 
@@ -86,7 +85,7 @@ function calcular() {
   const anterior = parseFloat(opAnterior); // Se declara constante y si le asigna el número anterior convertido a float(numero).
   const actual = parseFloat(opActual);// Se declara constante y si le asigna el número actual convertido a float(numero).
 
-  if (anterior === ' ' || actual === ' ') {
+  if (anterior === '' || actual === '') {
     return
   } else {
     switch (operacion) {
@@ -124,3 +123,5 @@ function clear() {
 function actualizarDisplay() {
   resultado.textContent = opActual; // Gracias al atributo textContent que convierte el resultado de la operación de número a texto.
 }
+
+clear()
