@@ -15,8 +15,8 @@ body {
 /* Header y Footer */
 header > .contenedorEncabezado,
 footer > .contenedorPieDePagina {
-  height: 4.1rem;
-  padding: 1.2rem;
+  height: 5rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
