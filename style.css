@@ -14,7 +14,6 @@ body {
 /* Header y Footer */
 header > .contenedorEncabezado,
 footer > .contenedorPieDePagina {
-  max-width: 100%;
   height: 4.1rem;
   padding: 1.2rem;
   display: flex;
@@ -22,6 +21,13 @@ footer > .contenedorPieDePagina {
   align-items: center;
   background-color: #515151;
   color: #fff;
+}
+
+footer > .contenedorPieDePagina {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* Titulo principal */
@@ -163,10 +169,14 @@ body.dark .calculadora td > button:hover {
   header > .contenedorEncabezado,
   footer > .contenedorPieDePagina {
     height: auto;
-    padding: .5rem;
+    padding: 0.5rem;
   }
 
-  header > .contenedorEncabezado > h1 > span{
+  footer > .contenedorPieDePagina {
+    position: initial;
+  }
+
+  header > .contenedorEncabezado > h1 > span {
     display: none;
   }
 
