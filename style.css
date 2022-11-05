@@ -47,6 +47,7 @@ footer > .contenedorPieDePagina {
 main {
   width: 100%;
   height: 80vh;
+  margin: .8em 0;
   display: grid;
   place-items: center;
 }
@@ -126,7 +127,6 @@ button > p {
   color: #fff;
 }
 
-
 /* Tema Claro */
 /* Body */
 body.dark {
@@ -159,13 +159,22 @@ body.dark .calculadora td > button:hover {
   background-color: #696969;
 }
 
-
 /* Responsive para Mobile */
 @media only screen and (max-width: 480px) {
-  main {
-  height: 76vh;
+  header > .contenedorEncabezado,
+  footer > .contenedorPieDePagina {
+    height: auto;
+    padding: .5rem;
   }
-  
+
+  header > .contenedorEncabezado > h1 > span{
+    display: none;
+  }
+
+  main {
+    height: 90vh;
+  }
+
   main > .calculadora {
     width: auto;
     height: 33rem;
