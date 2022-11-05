@@ -1,5 +1,15 @@
 // El elemento document representa la página HTML, este permite el acceso a toda la información del documento.
 
+// Funcionalidad de cambio de tema - oscuro y claro
+// Se declara una constante en donde se almacenará el id capturado gracia al DOM con el método getElementById
+const btnCambio = document.getElementById('cambio');
+
+// En este evento se captura el sonido click y se raliza la funcion de acceder a las clases de body y crear una nueva clase.
+btnCambio.addEventListener('click', () => {
+  document.body.classList.toggle('dark'); // El metodo toggle se encarga de crear un clase a cierta etiqueta en el HTML.
+});
+
+// Funcionalidad de la calculadora
 // Declaramos variables o constantes en donde se almacenarán los valores obtenidos por medio del DOM
 
 // Constantes - los botones de la calculadora son fijos y nunca van a cambiar.
@@ -13,8 +23,8 @@ let resultado = document.getElementById('result') // DOM por medio del atributo 
 
 // Variables en el scope global
 let opActual = ''; // Se inicializa vacia
-let opAnterior = '';
-let operacion = 0;
+let opAnterior = ''; // Se inicializa vacia
+let operacion = 0; // Se inicializa en0
 
 // Capturando Eventos
 
@@ -114,13 +124,3 @@ function clear() {
 function actualizarDisplay() {
   resultado.textContent = opActual; // Gracias al atributo textContent que convierte el resultado de la operación de número a texto.
 }
-
-
-// Funcionalidad de cambio de tema - oscuro y claro
-// Se declara una constante en donde se almacenará el id capturado gracia al DOM con el método getElementById
-const btnCambio = document.getElementById('cambio');
-
-// En este evento se captura el sonido click y se raliza la funcion de acceder a las clases de body y crear una nueva clase.
-btnCambio.addEventListener('click', () => {
-  document.body.classList.toggle('dark'); // El metodo toggle se encarga de crear un clase a cierta etiqueta en el HTML.
-});
