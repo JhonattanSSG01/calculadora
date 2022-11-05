@@ -114,3 +114,13 @@ function clear() {
 function actualizarDisplay() {
   resultado.textContent = opActual; // Gracias al atributo textContent que convierte el resultado de la operación de número a texto.
 }
+
+
+// Funcionalidad de cambio de tema - oscuro y claro
+// Se declara una constante en donde se almacenará el id capturado gracia al DOM con el método getElementById
+const btnCambio = document.getElementById('cambio');
+
+// En este evento se captura el sonido click y se raliza la funcion de acceder a las clases de body y crear una nueva clase.
+btnCambio.addEventListener('click', () => {
+  document.body.classList.toggle('dark'); // El metodo toggle se encarga de crear un clase a cierta etiqueta en el HTML.
+});
