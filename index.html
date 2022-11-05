@@ -1,26 +1,40 @@
+<!-- DOCTYPE tiene la función de experar al navegador que versión
+   de documento HTML se usará, en este caso es HTML5-->
 <!DOCTYPE html>
-<html>
+
+<!-- Start documento HTML-->
+<html lang="en">
+<!-- En la parte del HEAD utilizamos etiquetas acordes para importar recursos como el archivo de CSS, el archivo JS,
+  manifestar el lenguaje estandar para que admita caracteres especiales y la medida estandar para poder trabajar
+  responsive -->
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora con JavaScript</title>
+  <!-- Se importa los estilos de CSS -->
   <link type="text/css" href="style.css" rel="stylesheet">
   <link rel="stylesheet" href="fontawesome-free-6.2.0-web/css/all.css">
+  <!-- Se la funcionalidad de JS -->
+  <script src="script.js"></script>
+  <!-- Tutulo visaulizable en la pestaña de los navegadores -->
+  <title>Calculadora con JavaScript</title>
 </head>
 
-
+<!-- En la parte de BODY se desarrollar todo lo que se podrá visualizar en el navegador -->
+<!-- Start Contenido -->
 <body>
-
+  <!-- Start Header -->
   <header>
     <div class="contenedorEncabezado">
       <h1>Calculadora</h1>
       <h1><i class="fa-solid fa-circle-half-stroke" id="cambio"></i>Modo</h1>
     </div>
   </header>
-
+  <!-- End Header -->
+  <!-- Start Main -->
   <main>
+    <!-- Seccion de las teclas y display de la calculadora -->
     <table class="calculadora">
       <tr>
         <td colspan="4"><span id="result"></span></td>
@@ -49,20 +63,19 @@
         <td><button name="data_equal" id="equal"><p>=</p></button></td>
         <td><button name="data_operation"><p>/</p></button></td>
       </tr>
-      <!-- <tr>
-        <td colspan="4"><span id="creditos">Hecho para DenisseEstrada.com</span></td>
-      </tr> -->
     </table>
   </main>
-
+  <!-- End Main -->
+  <!-- Start Footer -->
   <footer>
     <div class="contenedorPieDePagina">
       <h3>🖤 Diseñado por Jhonattan Steven Saavedra Gomez</h3>
       <h3>© 2022 Copyright</h3>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <!-- End Footer -->
 </body>
+<!-- End Contenido -->
 
 </html>
+<!-- End documento HTML -->
