@@ -25,14 +25,11 @@ main > .calculadora {
   box-shadow: 0 15px 35px rgba(240, 240, 240, 0.5), 0 10px 20px rgba(240, 240, 240, 0.5);
 }
 
-body.dark
-#resultado{
-  background-color: #505050;
-  color: #fff;
-}
 
 body.dark
-.calculadora td > button {
+.calculadora td > button,
+body.dark
+#result {
   background-color: rgba(147, 147, 147, .5);
   color: #000;
 }
@@ -107,11 +104,12 @@ main > .calculadora {
   background-color: #505050;
   color: #fff;
   transform: rotate(45deg);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25)
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .calculadora td > button:hover {
   background-color: #7b7b7b;
+  transform: scale(0.9) rotate(45deg);
 }
 
 button > p {
@@ -120,12 +118,8 @@ button > p {
   font-size: 2rem;
 }
 
-#espacio {
-  display: none;
-}
-
 #reset,
-#igual {
+#equal {
   position: absolute;
   bottom: auto;
   margin: 0;
@@ -136,12 +130,12 @@ button > p {
   height: 5rem;
 }
 
-#igual {
+#equal {
   width: 6rem;
   height: 6rem;
 }
 
-#resultado {
+#result {
   display: block;
   text-align: right;
   font-size: 3rem;
@@ -149,8 +143,9 @@ button > p {
   padding: .5rem 1rem;
   width: 20.8rem;
   height: 3.5rem;
-  background-color: #9C9C9C;
+  background-color: rgba(0, 0, 0, .4);
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  color: #fff;
 }
